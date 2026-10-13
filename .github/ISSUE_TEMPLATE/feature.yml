@@ -1,0 +1,35 @@
+name: Feature / Improvement
+description: 提出新增功能、已有功能改进或用户体验优化
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: 请描述当前问题、期望效果、范围和验收条件. 一个 Issue 只处理一个主要问题.
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: 说明当前有什么问题、谁受到影响, 以及新增或改进后希望达到的效果.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: 说明包含和不包含的内容.
+      placeholder: "In scope: ...\nOut of scope: ..."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance
+      description: 使用清晰、可验证的检查项描述完成条件.
+      placeholder: "- [ ] 验收条件 1\n- [ ] 验收条件 2"
+    validations:
+      required: true
+  - type: textarea
+    id: related
+    attributes:
+      label: Related
+      description: 添加相关仓库、Issue、PR、文档或设计链接. 跨仓库请使用完整引用.

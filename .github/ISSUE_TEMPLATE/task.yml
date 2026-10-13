@@ -1,0 +1,35 @@
+name: Task
+description: 创建一个范围明确且可以验收的文档、重构、测试或工程维护任务
+title: "[Task]: "
+body:
+  - type: markdown
+    attributes:
+      value: 请描述目标、范围和验收条件. 一个 Issue 只处理一个主要问题.
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: 说明要解决的问题, 以及完成后可以观察到的结果.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: 说明包含和不包含的内容.
+      placeholder: "In scope: ...\nOut of scope: ..."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance
+      description: 使用清晰、可验证的检查项描述完成条件.
+      placeholder: "- [ ] 验收条件 1\n- [ ] 验收条件 2"
+    validations:
+      required: true
+  - type: textarea
+    id: related
+    attributes:
+      label: Related
+      description: 添加相关仓库、Issue、PR、文档或设计链接. 跨仓库请使用完整引用.

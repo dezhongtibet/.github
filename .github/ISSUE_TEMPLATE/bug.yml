@@ -1,0 +1,45 @@
+name: Bug
+description: 报告可以复现的异常行为
+title: "[Bug]: "
+body:
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual
+      description: 说明实际发生了什么.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+      description: 说明预期行为.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: 提供最小复现步骤和必要输入.
+      placeholder: "1. ...\n2. ...\n3. ..."
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: 提供应用或组件版本、操作系统及其他必要环境信息.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: 添加日志、截图或失败示例. 请先移除 secrets 和敏感数据.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety Check
+      options:
+        - label: 我已移除 secrets、credentials、personal data 和 restricted data.
+          required: true
